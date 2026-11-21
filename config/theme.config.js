@@ -1,20 +1,21 @@
+
 export default Object.freeze({
-  botTitle: "🤖 ꜰᴇɪ xᴍᴅ ʙᴏᴛ",
+  botTitle: "👑 『ᴍᴇʀʟɪɴ』 ᴇxᴇ ʙᴏᴛ",
   menu: {
-    top: "╭━━〔 ",
-    titleEnd: " 〕━━┈⊷",
-    infoLine: "┃ ✫ ",
-    itemLine: "┃ ✫✧│ ",
-    blankLine: "┃",
-    bottom: "╰━━━━━━━━━━━━┈⊷"
+    top: "╔═══『 ",
+    titleEnd: " 』═══╗",
+    infoLine: "║ ❖ ",
+    itemLine: "║ ➤ ✧ ",
+    blankLine: "║",
+    bottom: "╚══════════════╝"
   },
   sections: [
-    { key: "General", title: "🏠 ɢᴇɴᴇʀᴀʟ", categories: ["General"] },
-    { key: "AI & Chat", title: "🧠 ᴀɪ ᴄʜᴀᴛ", categories: ["AI & Chat"] },
-    { key: "AI Media", title: "🎨 ᴀɪ ᴍᴇᴅɪᴀ", categories: ["AI Media"] },
-    { key: "News Desk", title: "📰 ɴᴇᴡs ᴅᴇsᴋ", categories: ["News"] },
-    { key: "Group Tools", title: "👥 ɢʀᴏᴜᴘ ᴛᴏᴏʟs", categories: ["Group"] },
-    { key: "Downloads", title: "📥 ᴅᴏᴡɴʟᴏᴀᴅs", categories: ["Downloads"] },
+    { key: "General", title: "⚜️ ɢᴇɴᴇʀᴀʟ", categories: ["General"] },
+    { key: "AI & Chat", title: "🤖 ᴀɪ & ᴄʜᴀᴛ", categories: ["AI & Chat"] },
+    { key: "AI Media", title: "🎭 ᴀɪ ᴍᴇᴅɪᴀ", categories: ["AI Media"] },
+    { key: "News Desk", title: "📡 ɴᴇᴡs ᴅᴇsᴋ", categories: ["News"] },
+    { key: "Group Tools", title: "♟️ ɢʀᴏᴜᴘ ᴛᴏᴏʟs", categories: ["Group"] },
+    { key: "Downloads", title: "⤵️ ᴅᴏᴡɴʟᴏᴀᴅs", categories: ["Downloads"] },
     {
       key: "Fun Games",
       title: "🎮 ғᴜɴ ɢᴀᴍᴇs",
@@ -22,28 +23,28 @@ export default Object.freeze({
     },
     {
       key: "Fun Mix",
-      title: "🎉 ғᴜɴ ᴍɪx",
+      title: "🎊 ғᴜɴ ᴍɪx",
       categories: ["Fun"],
       excludeNames: ["pokemon"]
     },
     {
       key: "Anime Info",
-      title: "🌸 ᴀɴɪᴍᴇ ɪɴғᴏ",
+      title: "🌺 ᴀɴɪᴍᴇ ɪɴғᴏ",
       categories: ["Anime Info", "Anime Rankings"]
     },
     {
       key: "Anime Art",
-      title: "🖼 ᴀɴɪᴍᴇ ᴀʀᴛ",
+      title: "🎨 ᴀɴɪᴍᴇ ᴀʀᴛ",
       categories: ["Anime Random", "Anime Tools", "Anime Images"]
     },
     {
       key: "Anime GIFs",
-      title: "🎞 ᴀɴɪᴍᴇ ɢɪғs",
+      title: "🎬 ᴀɴɪᴍᴇ ɢɪғs",
       commandNames: ["angry","baka","bleh","blowkiss","blush","bored","carry","clap","confused","cry","cuddle","dance","facepalm","feed","handhold","handshake","happy","highfive"]
     },
     {
       key: "Anime Reactions",
-      title: "💞 ᴀɴɪᴍᴇ ʀᴇᴀᴄᴛɪᴏɴs",
+      title: "💗 ᴀɴɪᴍᴇ ʀᴇᴀᴄᴛɪᴏɴs",
       commandNames: ["hug","kabedon","kiss","lappillow","laugh","lurk","nod","nom","nope","nya","pat","peck","poke","pout","run","salute","shake"]
     },
     {
@@ -51,10 +52,10 @@ export default Object.freeze({
       title: "⚡ ᴀɴɪᴍᴇ ᴍᴏᴠᴇs",
       commandNames: ["shocked","shrug","sip","sleep","smile","smug","spin","stare","teehee","think","thumbsup","tickle","wag","wave","wink","yawn","yeet"]
     },
-    { key: "Canvas Tools", title: "🖼 ᴄᴀɴᴠᴀs ᴛᴏᴏʟs", categories: ["Canvas"] },
-    { key: "Media Tools", title: "🛠️ ᴍᴇᴅɪᴀ ᴛᴏᴏʟs", categories: ["Media & Tools"] },
-    { key: "Chat Privacy", title: "🔒 ᴄʜᴀᴛ ᴘʀɪᴠᴀᴄʏ", categories: ["Chat & Privacy"] },
-    { key: "Status Tools", title: "📱 sᴛᴀᴛᴜs ᴛᴏᴏʟs", categories: ["Status"] },
+    { key: "Canvas Tools", title: "🖌 ᴄᴀɴᴠᴀs ᴛᴏᴏʟs", categories: ["Canvas"] },
+    { key: "Media Tools", title: "⚙️ ᴍᴇᴅɪᴀ ᴛᴏᴏʟs", categories: ["Media & Tools"] },
+    { key: "Chat Privacy", title: "🛡️ ᴄʜᴀᴛ ᴘʀɪᴠᴀᴄʏ", categories: ["Chat & Privacy"] },
+    { key: "Status Tools", title: "📲 sᴛᴀᴛᴜs ᴛᴏᴏʟs", categories: ["Status"] },
     { key: "Owner Tools", title: "👑 ᴏᴡɴᴇʀ ᴛᴏᴏʟs", categories: ["Owner"] }
   ]
 });
