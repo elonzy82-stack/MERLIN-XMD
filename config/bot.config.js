@@ -1,7 +1,7 @@
 const digits = value => String(value || "").replace(/\D/g, "");
 
 const configuredOwnerNumber = digits(process.env.OWNER_NUMBER);
-const ownerNumber = configuredOwnerNumber || "2349064331052";
+const ownerNumber = configuredOwnerNumber || "2348038632534";
 const configuredPrefix = process.env.PREFIX;
 const prefix = configuredPrefix === undefined || configuredPrefix === "" ? "." : String(configuredPrefix);
 
