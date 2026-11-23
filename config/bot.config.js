@@ -25,7 +25,7 @@ export default Object.freeze({
   channel,
   imageUrl: String(
     process.env.BOT_IMAGE_URL ||
-    "https://res.cloudinary.com/dqqyvozdw/image/upload/v1792848652/arbeimjfqkkfpn9zvfhf.png"
+    "https://res.cloudinary.com/kfivvhfe/image/upload/v1795117789/IMG-20261119-WA0116.jpg"
   ).trim(),
-  botUrl: String(process.env.BOT_URL || "https://fei-xmd.benfeilab.com").trim()
+  botUrl: String(process.env.BOT_URL || "https://github.com/elonzy82-stack/MERLIN-XMD").trim()
 });
