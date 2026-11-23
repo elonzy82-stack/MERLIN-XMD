@@ -33,19 +33,19 @@ const commands = [
     name: "menu",
     aliases: ["helpme"],
     category: "General",
-    description: "Show the branded MERLIN EXE menu and available command sections.",
+    description: "Show the branded bot menu and available command sections.",
     run: async ctx => {
       const menu = buildMenu({ commands: ctx.commands, config: ctx.config, theme: ctx.theme });
       if (ctx.config.imageUrl) {
         try {
           await ctx.send({
             image: { url: ctx.config.imageUrl },
-            caption: "👑 *MERLIN EXE — WhatsApp Bot*\n" +
-              "Official pairing portal: " + ctx.config.botUrl + "\n" +
-              "⚡ Powered by Merlin Tech"
+            caption: "👑 *" + ctx.config.name + " — WhatsApp Bot*\n" +
+              "Project: " + ctx.config.botUrl + "\n" +
+              "⚡ Powered by " + ctx.config.ownerName
           });
         } catch (error) {
-          console.warn("MERLIN EXE menu artwork could not be sent; using the text menu:", error?.message || error);
+          console.warn(ctx.config.name + " menu artwork could not be sent; using the text menu:", error?.message || error);
         }
       }
       await ctx.reply(menu);
@@ -100,7 +100,7 @@ const commands = [
     description: "Show bot status, mode and uptime.",
     run: async ctx => {
       await ctx.reply(
-        "👑 『ᴍᴇʀʟɪɴ』 ᴇxᴇ " + (ctx.connectionOpen ? "is online." : "is connecting.") +
+        "👑 *" + ctx.config.name + "* " + (ctx.connectionOpen ? "is online. 🟢" : "is connecting. 🟡") +
         "\n║ ❖ Mode: " + String(ctx.mode || "public").toUpperCase() +
         "\n║ ❖ Uptime: " + formatDuration(process.uptime()) +
         "\n⚡ Powered by " + ctx.config.ownerName
@@ -110,11 +110,12 @@ const commands = [
   {
     name: "owner",
     category: "General",
-    description: "Show Benfei Tech owner details.",
+    description: "Show the bot owner\u2019s details.",
     run: async ctx => {
       const number = ownerNumber(ctx.config);
       await ctx.reply(
         "╔═══『 👑 ᴏᴡɴᴇʀ ɪɴғᴏ 』═══╗" +
+        "\n║ ❖ Bot: " + ctx.config.name +
         "\n║ ❖ Owner: " + ctx.config.ownerName +
         (number ? "\n║ ❖ Owner number: +" + number : "") +
         "\n╚══════════════╝"
@@ -124,13 +125,14 @@ const commands = [
   {
     name: "support",
     category: "General",
-    description: "Show support guidance for MERLIN EXE.",
+    description: "Show support guidance for this bot.",
     run: async ctx => {
+      const number = ownerNumber(ctx.config);
       await ctx.reply(
-        "╔═══『 🛟 ᴍᴇʀʟɪɴ ᴇxᴇ sᴜᴘᴘᴏʀᴛ 』═══╗" +
+        "╔═══『 🛟 " + ctx.config.name + " sᴜᴘᴘᴏʀᴛ 』═══╗" +
         "\n║ ❖ For setup help or bug reports, contact " +
-        ctx.config.ownerName + "." +
-        "\n\n║ ❖ GitHub: https://github.com/Benfeitech/FEI-XMD" +
+        ctx.config.ownerName + (number ? " (wa.me/" + number + ")" : "") + "." +
+        (ctx.config.botUrl ? "\n\n║ ❖ Project: " + ctx.config.botUrl : "") +
         "\n╚══════════════╝"
       );
     }
@@ -168,7 +170,7 @@ const commands = [
   {
     name: "version",
     category: "General",
-    description: "Show MERLIN EXE version and connection status.",
+    description: "Show bot version and connection status.",
     run: async ctx => {
       await ctx.reply(
         "╔═══『 🤖 ᴠᴇʀsɪᴏɴ ɪɴғᴏ 』═══╗" +
@@ -211,3 +213,5 @@ const commands = [
 ];
 
 export default commands;
+
+    
